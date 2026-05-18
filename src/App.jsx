@@ -52,20 +52,22 @@ function App() {
           <Navbar />
           <SocialDock />
           
-          <main>
-            <Hero />
-            <About />
-            <Skills />
-            <Education />
-            <Experience />
-            <Projects />
-            <Certifications />
-            <Stats />
-            <Resume />
-            <Contact />
-          </main>
-          
-          <Footer />
+          <div className="xl:pl-16">
+            <main>
+              <Hero />
+              <About />
+              <Skills />
+              <Education />
+              <Experience />
+              <Projects />
+              <Certifications />
+              <Stats />
+              <Resume />
+              <Contact />
+            </main>
+            
+            <Footer />
+          </div>
         </div>
     </>
   );

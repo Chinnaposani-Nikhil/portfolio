@@ -52,7 +52,7 @@ const Navbar = () => {
         scrolled ? 'py-4 glass-card' : 'py-6 bg-transparent'
       }`}
     >
-      <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
+      <div className="container mx-auto px-6 md:px-12 xl:pl-28 xl:pr-12 flex items-center justify-between">
         <a href="#home" className="text-2xl font-heading font-bold text-slate-900 dark:text-white flex items-center gap-2 group">
           <span className="bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text">NK</span>
           <span className="text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden md:block">Nikhil.dev</span>

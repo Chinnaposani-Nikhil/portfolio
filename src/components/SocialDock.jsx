@@ -10,7 +10,7 @@ const socials = [
 
 const SocialDock = () => {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, x: -50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 3, duration: 0.5 }}
