@@ -35,7 +35,7 @@ const Contact = () => {
   const contactInfo = [
     { icon: FaEnvelope, text: 'nikhil.cp66@gmail.com', href: 'mailto:nikhil.cp66@gmail.com' },
     { icon: FaPhoneAlt, text: '+91 8519913550', href: 'tel:+918519913550' },
-    { icon: FaLinkedin, text: 'LinkedIn', href: 'https://linkedin.com/in/nikhil-chinnaposani-333405252' },
+    { icon: FaLinkedin, text: 'LinkedIn', href: 'https://linkedin.com/in/nikhil-chinnaposani' },
     { icon: FaGithub, text: 'GitHub', href: 'https://github.com/Chinnaposani-Nikhil' }
   ];
 
