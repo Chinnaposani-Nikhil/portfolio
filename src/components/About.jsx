@@ -51,6 +51,7 @@ const About = () => {
               <img 
                 src="/profile.png" 
                 alt="Nikhil Chinnaposani" 
+                decoding="async"
                 className="w-full h-full object-cover"
               />
             </div>

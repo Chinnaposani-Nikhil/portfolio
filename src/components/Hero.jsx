@@ -6,11 +6,23 @@ import { Stars } from '@react-three/drei';
 import { textVariant, fadeIn, staggerContainer } from '../animations/variants';
 
 const ParticleBackground = () => {
+  const [mount, setMount] = React.useState(false);
+
+  useEffect(() => {
+    // Defer heavy WebGL canvas initialization until after initial paint
+    const timer = setTimeout(() => setMount(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!mount) return null;
+
   return (
     <div className="absolute inset-0 z-0 opacity-40 dark:opacity-60 pointer-events-none">
-      <Canvas camera={{ position: [0, 0, 1] }}>
-        <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
-      </Canvas>
+      <React.Suspense fallback={null}>
+        <Canvas camera={{ position: [0, 0, 1] }}>
+          <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
+        </Canvas>
+      </React.Suspense>
     </div>
   );
 };
@@ -43,8 +55,8 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       <ParticleBackground />
       
-      <div className="absolute top-1/4 -left-64 w-96 h-96 bg-primary/30 rounded-full mix-blend-multiply filter blur-[128px] opacity-70 animate-blob"></div>
-      <div className="absolute top-1/3 -right-64 w-96 h-96 bg-secondary/30 rounded-full mix-blend-multiply filter blur-[128px] opacity-70 animate-blob animation-delay-2000"></div>
+      <div className="absolute top-1/4 -left-64 w-96 h-96 bg-[radial-gradient(circle,rgba(14,165,233,0.3)_0%,transparent_70%)] rounded-full opacity-70 animate-blob"></div>
+      <div className="absolute top-1/3 -right-64 w-96 h-96 bg-[radial-gradient(circle,rgba(99,102,241,0.3)_0%,transparent_70%)] rounded-full opacity-70 animate-blob animation-delay-2000"></div>
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -117,6 +129,8 @@ const Hero = () => {
                 <img 
                   src="/profile.png" 
                   alt="Nikhil" 
+                  fetchpriority="high"
+                  decoding="async"
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
