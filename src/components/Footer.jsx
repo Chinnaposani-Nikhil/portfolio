@@ -1,7 +1,7 @@
 import React from 'react';
 import { 
   FaHome, FaGraduationCap, FaBriefcase, FaCode, 
-  FaUser, FaStar, FaFolder, FaEnvelope, 
+  FaUser, FaCertificate, FaLaptopCode, FaEnvelope, 
   FaPhoneAlt, FaLinkedin, FaGithub 
 } from 'react-icons/fa';
 
@@ -12,9 +12,9 @@ const Footer = () => {
     { name: 'Home', href: '#home', icon: <FaHome /> },
     { name: 'About', href: '#about', icon: <FaUser /> },
     { name: 'Education', href: '#education', icon: <FaGraduationCap /> },
-    // { name: 'Expertise', href: '#skills', icon: <FaStar /> },
     { name: 'Experience', href: '#experience', icon: <FaBriefcase /> },
-    { name: 'Projects', href: '#projects', icon: <FaFolder /> },
+    { name: 'Projects', href: '#projects', icon: <FaLaptopCode /> },
+    { name: 'Certifications', href: '#certifications', icon: <FaCertificate /> },
     { name: 'Skills', href: '#skills', icon: <FaCode /> },
     { name: 'Contact', href: '#contact', icon: <FaEnvelope /> },
   ];
