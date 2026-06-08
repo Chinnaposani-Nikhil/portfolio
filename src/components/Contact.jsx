@@ -87,6 +87,7 @@ const Contact = () => {
                   type="text" 
                   name="user_name" 
                   id="name"
+                  autoComplete="name"
                   required
                   placeholder="John Doe"
                   className="w-full bg-slate-50 dark:bg-black/20 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
@@ -99,6 +100,7 @@ const Contact = () => {
                   type="email" 
                   name="user_email" 
                   id="email"
+                  autoComplete="email"
                   required
                   placeholder="john@example.com"
                   className="w-full bg-slate-50 dark:bg-black/20 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"

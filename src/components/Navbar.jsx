@@ -82,6 +82,7 @@ const Navbar = () => {
           <ThemeToggle />
           <button
             onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle Navigation"
             className="text-slate-900 dark:text-white p-2"
           >
             {isOpen ? <BiX size={28} /> : <BiMenu size={28} />}
