@@ -108,10 +108,10 @@ const Hero = () => {
                 Hire Me
               </a>
               <div className="flex items-center gap-3 ml-4">
-                <a href="https://github.com/Chinnaposani-Nikhil" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:scale-110">
+                <a href="https://github.com/Chinnaposani-Nikhil" target="_blank" rel="noreferrer" aria-label="GitHub Profile" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:scale-110">
                   <FaGithub size={20} />
                 </a>
-                <a href="https://linkedin.com/in/nikhil-chinnaposani-333405252" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:scale-110">
+                <a href="https://linkedin.com/in/nikhil-chinnaposani" target="_blank" rel="noreferrer" aria-label="LinkedIn Profile" className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:text-primary transition-colors hover:scale-110">
                   <FaLinkedin size={20} />
                 </a>
               </div>

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const socials = [
   { icon: FaGithub, url: "https://github.com/Chinnaposani-Nikhil", label: "GitHub" },
-  { icon: FaLinkedin, url: "https://linkedin.com/in/nikhil-chinnaposani-333405252", label: "LinkedIn" },
+  { icon: FaLinkedin, url: "https://linkedin.com/in/nikhil-chinnaposani", label: "LinkedIn" },
   { icon: FaEnvelope, url: "mailto:nikhil.cp66@gmail.com", label: "Email" },
 ];
 
